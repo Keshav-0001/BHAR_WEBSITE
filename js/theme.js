@@ -5,7 +5,9 @@
  */
 
 const ThemeManager = (() => {
-  const STORAGE_KEY = 'bhar-theme';
+  // v2 starts every existing visitor with the new light-mode default once.
+  // Any theme they choose manually after that is remembered normally.
+  const STORAGE_KEY = 'bhar-theme-v2';
   const DARK = 'dark';
   const LIGHT = 'light';
 
@@ -13,12 +15,11 @@ const ThemeManager = (() => {
   const MOON_ICON = '🌙';
   const SUN_ICON  = '☀️';
 
-  /** Get saved preference, fallback to system preference */
+  /** Get saved preference, fallback to the website's light theme */
   function getSavedTheme() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) return saved;
-    // Respect OS dark mode
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
+    return LIGHT;
   }
 
   /** Apply theme to <html> element */
@@ -45,12 +46,6 @@ const ThemeManager = (() => {
     // Bind toggle buttons
     document.querySelectorAll('.theme-toggle').forEach(btn => {
       btn.addEventListener('click', toggle);
-    });
-    // Listen for OS-level changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      if (!localStorage.getItem(STORAGE_KEY)) {
-        applyTheme(e.matches ? DARK : LIGHT);
-      }
     });
   }
 
