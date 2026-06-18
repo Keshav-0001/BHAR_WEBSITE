@@ -123,9 +123,20 @@
 @media (max-width: 480px) {
   :root { --nav-h: 60px; }
 
-  /* Nav logo – hide text on very small */
-  .nav-logo-text { display: none; }
-  .nav-logo-img  { height: 38px; }
+  /* Keep the full company name visible beside the logo on mobile. */
+  .nav-inner { padding: 0 4%; gap: 10px; }
+  .nav-logo { gap: 8px; min-width: 0; }
+  .nav-logo-img { height: 38px; flex-shrink: 0; }
+  .nav-logo-text { display: flex; min-width: 0; line-height: 1.08; }
+  .nav-logo-text .brand-name {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .nav-logo-text .brand-sub {
+    font-size: 9px;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
 
   /* Typography */
   h1 { font-size: 2rem; }
@@ -175,6 +186,14 @@
 
 /* ── 360px – very small phones ── */
 @media (max-width: 360px) {
+  .nav-inner { padding: 0 3%; gap: 6px; }
+  .nav-logo { gap: 6px; }
+  .nav-logo-img { height: 34px; }
+  .nav-logo-text .brand-name { font-size: 12.5px; }
+  .nav-logo-text .brand-sub { font-size: 7.5px; letter-spacing: 0.015em; }
+  .nav-right { gap: 4px; }
+  .theme-toggle { width: 36px; height: 36px; }
+  .hamburger { padding: 4px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
   .container { padding: 0 3.5%; }
