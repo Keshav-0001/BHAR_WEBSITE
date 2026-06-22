@@ -232,6 +232,152 @@
     @media (prefers-reduced-motion: reduce) {
       .hero-video-layer { display: none; }
     }
+
+    /* Blue Horizon company information section */
+    .bhar-info-section {
+      margin: 64px 0 70px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 8px);
+      background:
+        radial-gradient(circle at top left, rgba(201, 96, 49, 0.12), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(31, 59, 122, 0.12), transparent 34%),
+        linear-gradient(135deg, var(--bg-card), var(--bg2));
+      box-shadow: var(--shadow-sm);
+    }
+    .bhar-info-section::before {
+      content: "";
+      position: absolute;
+      top: -110px;
+      right: -80px;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(201, 96, 49, 0.08);
+    }
+    .bhar-info-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+      gap: 38px;
+      align-items: center;
+      padding: 42px;
+    }
+    .bhar-logo-panel {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 34px 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.52);
+      box-shadow: var(--shadow-sm);
+    }
+    [data-theme="dark"] .bhar-logo-panel {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .bhar-main-logo {
+      width: min(100%, 190px);
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 14px 24px rgba(31, 59, 122, 0.18));
+    }
+    .bhar-logo-panel h3 {
+      margin: 0;
+      color: var(--primary);
+      font-size: clamp(22px, 2vw, 30px);
+      line-height: 1.15;
+    }
+    .bhar-logo-panel span {
+      display: block;
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .bhar-info-content h3 {
+      margin: 12px 0 12px;
+      font-size: clamp(28px, 3vw, 44px);
+      line-height: 1.12;
+    }
+    .bhar-info-content > p {
+      margin: 0 0 22px;
+      color: var(--text-sec);
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 760px;
+    }
+    .bhar-values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .bhar-value-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--bg-card);
+      transition: var(--transition);
+    }
+    .bhar-value-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-sm);
+    }
+    .bhar-value-card strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--primary);
+      font-size: 15px;
+    }
+    .bhar-value-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+    .bhar-tagline-strip {
+      margin-top: 24px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(31, 59, 122, 0.1), rgba(201, 96, 49, 0.12));
+      color: var(--primary);
+      font-weight: 900;
+      font-size: clamp(20px, 2.4vw, 34px);
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+    @media (max-width: 992px) {
+      .bhar-info-inner {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+      .bhar-logo-panel {
+        min-height: auto;
+      }
+    }
+    @media (max-width: 640px) {
+      .bhar-info-section {
+        margin: 44px 0 50px;
+      }
+      .bhar-info-inner {
+        padding: 22px;
+      }
+      .bhar-values-grid {
+        grid-template-columns: 1fr;
+      }
+      .bhar-main-logo {
+        width: 150px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -460,6 +606,57 @@ Since 2019, we have been delivering innovative software products and technology 
           <a href="pages/services.html#consulting" class="card-link">Learn More →</a>
         </article>
       </div>
+
+
+      <!-- Blue Horizon company information section -->
+      <section class="bhar-info-section reveal" aria-labelledby="bharInfoTitle">
+        <div class="bhar-info-inner">
+          <div class="bhar-logo-panel">
+            <img src="images/logo.png" alt="Blue Horizon Automation Research logo" class="bhar-main-logo" />
+            <h3>Blue Horizon</h3>
+            <span>Automation Research</span>
+          </div>
+
+          <div class="bhar-info-content">
+            <span class="section-tag">About Blue Horizon</span>
+            <h3 id="bharInfoTitle">Blue Horizon Automation Research Pvt. Limited</h3>
+            <p>
+              We build automation, software, ERP, CRM and web solutions that help businesses reduce manual work,
+              improve accuracy and move faster. Our team focuses on understanding real business processes deeply,
+              then delivering reliable systems that create measurable value for customers.
+            </p>
+
+            <div class="bhar-values-grid" aria-label="Blue Horizon values">
+              <div class="bhar-value-card">
+                <strong>Exceed Expectations</strong>
+                <p>We understand business processes and technologies, then deliver more than expected.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Get It Done</strong>
+                <p>We build working solutions, overcome obstacles and deliver exceptional results fast.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Quality Systems</strong>
+                <p>We aim high and build premium-quality systems that provide strong customer value.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Glass Door Approach</strong>
+                <p>We believe in candid, honest and respectful communication with customers and employees.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Dig Deep</strong>
+                <p>Research, insight, effort and domain knowledge help us deliver high-value solutions.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Focused</strong>
+                <p>We stay committed to customers, employees, continuous learning and experimentation.</p>
+              </div>
+            </div>
+
+            <div class="bhar-tagline-strip">Innovate. Automate. Elevate.</div>
+          </div>
+        </div>
+      </section>
 
       <!-- Homepage-only image information section -->
       <div class="automation-gallery-section reveal" id="automationShowcase">
