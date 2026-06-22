@@ -6,7 +6,7 @@
 
 (function () {
   const WIDGET_CONFIG = {
-    phone: "918722629900",                      // WhatsApp number (country code + number, no + or spaces)
+    phone: "918390500190",                      // WhatsApp number (country code + number, no + or spaces)
     prefilledMessage: "",                        // Optional: pre-fill a message in WhatsApp
     agentName: "BHAR Support",
     agentTitle: "Blue Horizon Automation Research",
