@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Software Product Pricing | BHAR India</title>
-  <meta name="description" content="Explore indicative pricing for BHAR India POS, Clinic, CRM, KYC, RPA, Inventory, Property Dealer, and Asset Management solutions." />
-  <meta name="keywords" content="POS pricing India, clinic software pricing, CRM pricing India, KYC automation cost, RPA automation pricing, inventory software pricing, asset management software pricing, BHAR India pricing" />
+  <meta name="description" content="Explore indicative pricing for BHAR India website development, POS, Clinic, CRM, KYC, RPA, Inventory, Property Dealer, and Asset Management solutions." />
+  <meta name="keywords" content="website development pricing India, static website pricing, dynamic website pricing, POS pricing India, clinic software pricing, CRM pricing India, KYC automation cost, RPA automation pricing, inventory software pricing, asset management software pricing, BHAR India pricing" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.bharindia.com/pages/pricing.html" />
   <meta property="og:title" content="Software Product Pricing | BHAR India" />
-  <meta property="og:description" content="Indicative monthly, yearly, one-time, and AMC pricing for BHAR India software and automation solutions." />
+  <meta property="og:description" content="Indicative website development, monthly, yearly, one-time, and AMC pricing for BHAR India software and automation solutions." />
   <meta property="og:url" content="https://www.bharindia.com/pages/pricing.html" />
   <link rel="icon" type="image/png" href="../images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,9 +48,18 @@
     .pricing-plan .btn{width:100%;justify-content:center;padding:10px 12px;font-size:12.5px;}
     .pricing-plan.featured{background:var(--gradient-soft);}
     .pricing-value-badge{position:absolute;top:14px;right:14px;padding:3px 8px;border-radius:20px;background:var(--accent);color:#fff;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;}
+
+    .website-pricing-card{grid-template-columns:1fr;}
+    .website-pricing-plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--bg2);border-top:1px solid var(--border);}
+    .website-pricing-plans .pricing-plan{justify-content:flex-start;gap:0;min-height:100%;}
+    .website-pricing-plans .pricing-plan+.pricing-plan{border-left:1px solid var(--border);}
+    .website-plan-list{list-style:none;margin:18px 0 22px;display:grid;gap:9px;}
+    .website-plan-list li{display:flex;align-items:flex-start;gap:8px;color:var(--text-sec);font-size:13px;line-height:1.45;}
+    .website-plan-list li::before{content:'\2713';color:#16a34a;font-weight:800;flex:0 0 auto;}
+    .website-plan-note{margin-top:6px;color:var(--text-muted);font-size:11.5px;line-height:1.55;}
     .pricing-note{margin-top:30px;padding:20px 24px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2);text-align:center;}
     .pricing-note p{color:var(--text-muted);font-size:13px;line-height:1.65;}
-    @media(max-width:1024px){.pricing-product{grid-template-columns:1fr}.pricing-plans{border-left:0;border-top:1px solid var(--border)}}
+    @media(max-width:1024px){.pricing-product{grid-template-columns:1fr}.pricing-plans{border-left:0;border-top:1px solid var(--border)}.website-pricing-plans{grid-template-columns:1fr}.website-pricing-plans .pricing-plan+.pricing-plan{border-left:0;border-top:1px solid var(--border)}}
     @media(max-width:620px){.pricing-product-info{padding:25px 22px}.pricing-feature-list{grid-template-columns:1fr}.pricing-plans{grid-template-columns:1fr}.pricing-plan+.pricing-plan{border-left:0;border-top:1px solid var(--border)}.pricing-product-heading{align-items:flex-start}.pricing-number{font-size:1.8rem}}
   </style>
 </head>
@@ -78,7 +87,7 @@
     <a href="../index.html">Home</a>
     <div class="mobile-section-label">Services</div><a href="services.html#rpa">&#x1F916; Automation Solutions</a><a href="services.html#webapp">&#x1F310; Web Applications</a><a href="services.html#consulting">&#x1F4C8; Website Development</a>
     <div class="mobile-divider"></div><div class="mobile-section-label">Products</div><a href="products.html#crm">&#x1F4BC; CRM &amp; Lead Management</a><div class="mobile-divider"></div>
-    <a href="pricing.html">Pricing</a><a href="projects.html">Projects</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html" class="btn-primary-mobile">Contact Us</a>
+    <a href="pricing.html">Pricing</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html" class="btn-primary-mobile">Contact Us</a>
   </div>
 </header>
 
@@ -86,10 +95,73 @@
   <div class="page-header"><div class="container"><div class="breadcrumb"><a href="../index.html">Home</a><span>&rsaquo;</span><span>Pricing</span></div><h1>Product Pricing</h1><p>Indicative pricing for practical software and automation solutions that grow with your business.</p></div></div>
 
   <section class="section" aria-labelledby="pricing-heading">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
     <div class="container">
       <div class="pricing-intro reveal"><span class="section-tag">Our Products</span><h2 class="section-title" id="pricing-heading">Choose the Right Solution for Your Business</h2><p class="section-desc">Explore our software and automation portfolio, then scale users, locations, integrations, and features as your operations grow.</p></div>
 
       <div class="pricing-products">
+
+        <article class="pricing-product website-pricing-card reveal" id="website-development-pricing">
+          <div class="pricing-product-info">
+            <div class="pricing-product-heading">
+              <div class="pricing-product-icon">&#x1F310;</div>
+              <div><span class="section-tag">Website Development Pricing</span><h2>Website Development Packages</h2></div>
+            </div>
+            <p>Build a professional, mobile-friendly website with the right level of content control for your business. Packages can include domain setup, web hosting, SSL certificate setup, contact forms, WhatsApp integration, and basic SEO readiness.</p>
+            <ul class="pricing-feature-list">
+              <li>Domain registration assistance</li>
+              <li>Web hosting setup</li>
+              <li>SSL certificate setup</li>
+              <li>Responsive mobile-friendly design</li>
+              <li>Contact form and WhatsApp integration</li>
+              <li>Basic SEO setup</li>
+            </ul>
+            <div class="pricing-best-for"><span>Business Websites</span><span>Landing Pages</span><span>Service Providers</span><span>Growing Brands</span></div>
+          </div>
+          <div class="website-pricing-plans">
+            <div class="pricing-plan">
+              <span class="pricing-plan-label">Static Website</span>
+              <div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">9,999</span></div>
+              <span class="pricing-period">starting one-time cost</span>
+              <ul class="website-plan-list">
+                <li>Up to 5 informational pages</li>
+                <li>Responsive static design</li>
+                <li>Domain, hosting &amp; SSL setup</li>
+                <li>Contact form / WhatsApp button</li>
+              </ul>
+              <p class="website-plan-note">Best for portfolio, company profile, and simple service websites.</p>
+              <a href="contact.html" class="btn btn-secondary">Choose Static</a>
+            </div>
+            <div class="pricing-plan featured">
+              <span class="pricing-value-badge">Popular</span>
+              <span class="pricing-plan-label">Semi-Dynamic Website</span>
+              <div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">19,999</span></div>
+              <span class="pricing-period">starting one-time cost</span>
+              <ul class="website-plan-list">
+                <li>Static pages with editable sections</li>
+                <li>Admin-friendly content updates</li>
+                <li>Domain, hosting &amp; SSL setup</li>
+                <li>Blog / gallery / enquiry-ready structure</li>
+              </ul>
+              <p class="website-plan-note">Best for businesses that need regular content or offer updates.</p>
+              <a href="contact.html" class="btn btn-primary">Choose Semi-Dynamic</a>
+            </div>
+            <div class="pricing-plan">
+              <span class="pricing-plan-label">Dynamic Website</span>
+              <div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">39,999</span></div>
+              <span class="pricing-period">starting one-time cost</span>
+              <ul class="website-plan-list">
+                <li>Database-driven website</li>
+                <li>Admin panel / dashboard</li>
+                <li>Domain, hosting &amp; SSL setup</li>
+                <li>Custom forms, users, reports or modules</li>
+              </ul>
+              <p class="website-plan-note">Best for businesses needing data, login, forms, and custom workflows.</p>
+              <a href="contact.html" class="btn btn-secondary">Choose Dynamic</a>
+            </div>
+          </div>
+        </article>
+
         <article class="pricing-product reveal">
           <div class="pricing-product-info"><div class="pricing-product-heading"><div class="pricing-product-icon">&#x1F6D2;</div><div><span class="section-tag">Retail Billing &amp; Inventory</span><h2>POS (Point of Sale) Without Captain</h2></div></div><p>A practical point-of-sale solution for fast billing, stock control, barcode operations, GST billing, and sales visibility.</p><ul class="pricing-feature-list"><li>Billing</li><li>Inventory management</li><li>Barcode management</li><li>Sales reports</li><li>GST billing</li></ul><div class="pricing-best-for"><span>Retail Stores</span><span>Shops</span><span>Billing Counters</span></div></div>
           <div class="pricing-plans"><div class="pricing-plan"><span class="pricing-plan-label">Monthly</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">499</span></div><span class="pricing-period">per user / month</span><a href="contact.html" class="btn btn-secondary">Choose Monthly</a></div><div class="pricing-plan featured"><span class="pricing-value-badge">Yearly</span><span class="pricing-plan-label">Annual</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">5,999</span></div><span class="pricing-period">per user / year</span><a href="contact.html" class="btn btn-primary">Choose Annual</a></div></div>
@@ -132,7 +204,7 @@
 
         <article class="pricing-product reveal">
           <div class="pricing-product-info"><div class="pricing-product-heading"><div class="pricing-product-icon">&#x1F4E6;</div><div><span class="section-tag">Asset &amp; Stock Control</span><h2>Asset Management System</h2></div></div><p>Track assets, allocations, maintenance, stock, purchase orders, and inventory records with complete reporting.</p><ul class="pricing-feature-list"><li>Asset tracking</li><li>Asset allocation</li><li>Maintenance schedules</li><li>Asset reports</li><li>Stock tracking</li><li>Purchase orders</li><li>Inventory reports</li></ul><div class="pricing-best-for"><span>Companies</span><span>Hospitals</span><span>Institutes</span><span>Multi-Location Teams</span></div></div>
-          <div class="pricing-plans"><div class="pricing-plan"><span class="pricing-plan-label">Monthly</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">8999</span></div><span class="pricing-period">per user / month</span><a href="contact.html" class="btn btn-secondary">Choose Monthly</a></div><div class="pricing-plan featured"><span class="pricing-value-badge">Yearly</span><span class="pricing-plan-label">Annual</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">11,999</span></div><span class="pricing-period">per user / year</span><a href="contact.html" class="btn btn-primary">Choose Annual</a></div></div>
+          <div class="pricing-plans"><div class="pricing-plan"><span class="pricing-plan-label">Monthly</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">999</span></div><span class="pricing-period">per user / month</span><a href="contact.html" class="btn btn-secondary">Choose Monthly</a></div><div class="pricing-plan featured"><span class="pricing-value-badge">Yearly</span><span class="pricing-plan-label">Annual</span><div class="pricing-amount"><span class="pricing-currency">&#8377;</span><span class="pricing-number">11,999</span></div><span class="pricing-period">per user / year</span><a href="contact.html" class="btn btn-primary">Choose Annual</a></div></div>
         </article>
       </div>
 
@@ -140,10 +212,11 @@
     </div>
   </section>
 
-  <section class="section bg-section"><div class="container"><div class="cta-banner reveal"><h2>Need a Custom Plan?</h2><p>Tell us about your users, locations, workflow, and integrations. We will recommend the right product configuration.</p><div class="cta-btns"><a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a><a href="products.html" class="btn btn-ghost btn-lg">Explore Products</a></div></div></div></section>
+  <section class="section bg-section">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div><div class="container"><div class="cta-banner reveal"><h2>Need a Custom Plan?</h2><p>Tell us about your users, locations, workflow, and integrations. We will recommend the right product configuration.</p><div class="cta-btns"><a href="contact.html" class="btn btn-white btn-lg">Request a Quote</a><a href="products.html" class="btn btn-ghost btn-lg">Explore Products</a></div></div></div></section>
 </main>
 
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" /><div class="nav-logo-text"><span class="brand-name">Blue Horizon</span><span class="brand-sub">Automation Research</span></div></a><p>Delivering intelligent automation and software solutions that drive measurable business outcomes.</p></div><div class="footer-col"><h5>Products</h5><a href="products.html#crm">CRM</a><a href="products.html#clinic">Clinic Management</a><a href="products.html#pos-captain">POS + Captain</a><a href="products.html#assets">Asset Management</a><a href="products.html#sap-report">Asset Management</a><a href="products.html#gst-calculation">GST Calculation</a><a href="products.html#retail-pos">Retail POS</a><a href="products.html#sap">SAP automation</a><a href="products.html#invoice">Invoice Processing</a><a href="products.html#sales-erp">Sales ERP automation</a><a href="products.html#property">Property Dealer system.</a><a href="products.html#ekyc">E-KYC management</a></div><div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div><div class="footer-col"><h5>Legal</h5><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div><div class="footer-bottom"><p>&copy; 2026 Blue Horizon Automation Research. All rights reserved.</p><p>Built for India, designed for scale.</p></div></div></footer>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" /><div class="nav-logo-text"><span class="brand-name">Blue Horizon</span><span class="brand-sub">Automation Research</span></div></a><p>Delivering intelligent automation and software solutions that drive measurable business outcomes.</p></div><div class="footer-col"><h5>Products</h5><a href="pricing.html#website-development-pricing">Website Development Pricing</a><a href="products.html#crm">CRM</a><a href="products.html#clinic">Clinic Management</a><a href="products.html#pos-captain">POS + Captain</a><a href="products.html#assets">Asset Management</a><a href="products.html#sap-report">Asset Management</a><a href="products.html#gst-calculation">GST Calculation</a><a href="products.html#retail-pos">Retail POS</a><a href="products.html#sap">SAP automation</a><a href="products.html#invoice">Invoice Processing</a><a href="products.html#sales-erp">Sales ERP automation</a><a href="products.html#property">Property Dealer system.</a><a href="products.html#ekyc">E-KYC management</a></div><div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div><div class="footer-col"><h5>Legal</h5><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div><div class="footer-bottom"><p>&copy; 2026 Blue Horizon Automation Research. All rights reserved.</p><p>Built for India, designed for scale.</p></div></div></footer>
 
 <button id="back-to-top" aria-label="Back to top">&uarr;</button>
 <script src="../js/theme.js"></script><script src="../js/main.js"></script><script src="../js/whatsapp-widget.js"></script>

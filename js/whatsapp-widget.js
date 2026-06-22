@@ -11,7 +11,7 @@
     agentName: "BHAR Support",
     agentTitle: "Blue Horizon Automation Research",
     agentStatus: "Typically replies within minutes",
-    welcomeMessage: "👋 Hello! Welcome to <strong>BHAR India</strong>.<br><br>If you're looking for <strong>RPA solutions, web applications,</strong> or <strong>business consulting</strong> — we'd love to help!<br><br>Tap the button below to chat with us directly on WhatsApp.",
+    welcomeMessage: "👋 Hello! Welcome to <strong>BHAR India</strong>.<br><br>If you're looking for <strong>RPA solutions, web applications, Website Development</strong> or <strong>business consulting</strong> or <strong>ERP Implementation</strong> — we'd love to help!<br><br>Tap the button below to chat with us directly on WhatsApp.",
     buttonLabel: "Chat on WhatsApp",
     popupDelay: 2500,   // ms before popup auto-opens on first visit
   };

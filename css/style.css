@@ -729,3 +729,56 @@ p{color:var(--text-sec);line-height:1.82;font-size:16px;}
 }
 #back-to-top.show{opacity:1;pointer-events:all;}
 #back-to-top:hover{background:var(--accent);transform:translateY(-3px);}
+
+
+/* ============================================================
+   Section Slogan Highlight
+   ============================================================ */
+.section-slogan-highlight{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  max-width:92%;
+  margin:0 auto 24px;
+  padding:7px 18px;
+  border-radius:999px;
+  background:linear-gradient(135deg, rgba(30,53,112,0.11), rgba(196,98,45,0.11));
+  border:1px solid rgba(196,98,45,0.30);
+  color:var(--primary);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  line-height:1.35;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(30,53,112,0.08);
+}
+[data-theme="dark"] .section-slogan-highlight{
+  color:var(--salmon);
+  background:linear-gradient(135deg, rgba(45,78,158,0.22), rgba(196,98,45,0.16));
+  border-color:rgba(196,98,45,0.36);
+}
+.hero > .section-slogan-highlight{
+  position:absolute;
+  top:calc(var(--nav-h) + 18px);
+  left:50%;
+  transform:translateX(-50%);
+  margin:0;
+}
+.section-sm > .section-slogan-highlight{
+  margin-bottom:20px;
+}
+@media (max-width:768px){
+  .section-slogan-highlight{
+    font-size:10px;
+    letter-spacing:0.10em;
+    padding:6px 13px;
+    margin-bottom:18px;
+  }
+  .hero > .section-slogan-highlight{
+    top:calc(var(--nav-h) + 12px);
+  }
+}
